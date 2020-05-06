@@ -1,0 +1,14 @@
+{
+    "batch-size": 256,
+    "num-labels": 3,
+    "cond-input-name": "cond",
+    "disc-input-name": "disc",
+    "hidden-units": 256,
+    "latent-dim": 100,
+    "num-features":41,
+    "epochs": 20000,
+    "scaler":"scaler.joblib",
+    "img-path": "images/",
+    "models-path":"models/",
+    "test-img":"test_images/"
+}

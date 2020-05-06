@@ -1,0 +1,18 @@
+\glossaryentry{$ \bm {\vec {z}} $?\glossentry{zlabel}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$\bm {\vec {c}} $?\glossentry{clabel}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\vec {y}_{g}}$?\glossentry{genuoutput}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\widetilde {x}} $?\glossentry{noiseinput}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\vec {y}} $?\glossentry{genericdiscinput}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\vec {x}_d} $?\glossentry{realsamples}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\vec {y}_{d}} $?\glossentry{discoutput}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {D} $?\glossentry{discfunction}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {G} $?\glossentry{genfunction}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {L_D} $?\glossentry{discloss}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {L_G} $?\glossentry{genloss}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {G_s} $?\glossentry{gsingle}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {G_b} $?\glossentry{gbinary}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {P_{j"|i}} $?\glossentry{tsne}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {C}_i $?\glossentry{distance}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {\left (\bar {m}_i,\bar {n}_i\right )} $?\glossentry{centroids}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {(m_j,n_j)} $?\glossentry{tsneoutput}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{$ \bm {p_{2_i}} $?\glossentry{norm}|setentrycounter[]{page}\glsnumberformat}{4}

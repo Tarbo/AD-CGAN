@@ -1,0 +1,117 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{nicefrac}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\usepackage[inline]{enumitem}
+\usepackage[nopostdot,nonumberlist]{glossaries}
+\renewcommand{\baselinestretch}{1.000}
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+\usepackage[pdftex]{graphicx}
+% declare the path(s) where your graphic files are
+\graphicspath{{../images/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+\DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png}
+\else
+% or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+% will default to the driver specified in the system graphics.cfg if no
+% driver is specified.
+\usepackage[dvips]{graphicx}
+% declare the path(s) where your graphic files are
+\graphicspath{{../eps/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+\DeclareGraphicsExtensions{.eps}
+\fi
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% place the makeglossary at the preamble
+%\newglossary[nlg]{notation}{not}{ntn}{List of Symbols and Acronyms}
+
+
+% type out the glossaries
+\input{glossaries}
+\makeglossaries	
+
+
+\begin{document}
+
+\history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
+\doi{10.1109/ACCESS.2020.DOI}
+
+\title{AD-CGAN: Anomaly Detection using Conditional Generative Adversarial Networks}
+\author{\uppercase{Okwudili M. Ezeme}, \IEEEmembership{Member, IEEE},
+\uppercase{Qusay H. Mahmoud, \IEEEmembership{Senior Member, IEEE} and Akramul Azim \IEEEmembership{Senior Member, IEEE}}}
+\address{Department of Electrical, Computer and Software Engineering \\
+	Ontario Tech University, Oshawa, ON L1G 0C5 Canada\\
+	(e-mail: \{mellitus.ezeme, qusay.mahmoud, akramul.azim\}@ontariotechu.net)}
+%\tfootnote{This research was funded in part by the Natural Sciences and Engineering Research Council of Canada (NSERC).}
+
+\markboth
+{Ezeme, O. \headeretal: AD-CGAN: Anomaly Detection using CGAN}
+{Ezeme, O. \headeretal: AD-CGAN: Anomaly Detection using CGAN}
+
+\corresp{Corresponding author: Okwudili Ezeme (e-mail: mellitus.ezeme@ontariotechu.net).}
+
+\begin{abstract}
+Whether in the realm of software or hardware, datasets that represent the state of systems are mostly imbalanced. This imbalance is because the reliability requirements of these systems make the occurrence of an anomaly a rare phenomenon. Hence, most datasets on anomaly detection have a relatively small percentage that captures the anomaly. Recently, generative adversarial networks (GAN) have shown promising results in image generation tasks. Therefore, in this research work, we build on the ability of conditional GANs (CGAN) to generate plausible distributions of a given profile to solve the challenge of data imbalance in anomaly detection tasks and present a novel framework for anomaly detection. Firstly, we learn the pattern of the minority class data samples using a \textit{single class CGAN}. Secondly, we use the knowledge base of the single class CGAN to generate samples that augment the minority class samples so that \textit{a binary class CGAN} can train on the typical and malicious profiles with a balanced dataset. This approach inherently eliminates the bias imposed on algorithms from the dataset and results in a robust framework with improved generalization. Thirdly, the binary class CGAN generates a knowledge base that we use to construct the cluster-based anomaly detector. During testing,  we do not use the single class CGAN, thereby providing us with a lean and efficient algorithm for anomaly detection that can do anomaly detection on semi-supervised and non-parametric multivariate data. 
+We test the framework on logs and image-based anomaly detection datasets with class imbalance.
+We compare the performance of AD-CGAN with similar cluster-based algorithms that have been tested on the same benchmark datasets, and AD-CGAN outperforms all the other algorithms in the standard metrics for measuring the efficacy of anomaly detection algorithms.
+\end{abstract}
+
+\begin{keywords}
+Anomaly Detection, Transfer Learning, Deep Learning, Generative Adversarial Networks
+\end{keywords}
+
+\titlepgskip=-15pt
+
+\maketitle
+\input{access-body}
+\bibliographystyle{IEEETran}
+\bibliography{access}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]
+		{tarbo-image}}]{Okwudili M. Ezeme}
+	is a Ph.D. candidate in the  Department of Electrical, Computer and Software 
+	Engineering, Ontario Tech University, Oshawa,  
+	Ontario, Canada. He received the M.Sc. degree from the Department of 
+	Electrical and Computer Engineering, University of Toronto (UofT), Ontario, 
+	Canada in 2015, and the  B.Engr. degree in Electronics Engineering 
+	from the University of Nigeria, Nsukka (UNN), Nigeria in 2010. His current 
+	research interests include deep recurrent neural networks, time-series data 
+	processing,  generative adversarial networks and distributed processing in Internet of Things (IoT) devices.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{qusay-image}}]{Qusay
+		H. Mahmoud}
+	is a Professor of Software Engineering in the Department of Electrical, Computer, and Software Engineering at Ontario Tech University in Oshawa, Canada. He was the Founding Chair of the Department, and more recently he has served as Associate Dean of the Faculty of Engineering and Applied Science at the same university. His research interests include intelligent software systems and cybersecurity.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{azim-image}}]{Dr.
+		Akramul Azim}
+	is an assistant professor in the Department of Electrical, Computer and 
+	Software Engineering and head of the real-time embedded software (RTEMSOFT) 
+	research group at Ontario Tech University, 
+	Oshawa, Ontario, Canada. His research interests include real-time systems, 
+	embedded software, software verification and validation, safety-critical 
+	software and intelligent transportation systems. He is a Professional Engineer 
+	in Ontario and a senior member of IEEE.
+\end{IEEEbiography}
+
+
+\EOD
+
+\end{document}
